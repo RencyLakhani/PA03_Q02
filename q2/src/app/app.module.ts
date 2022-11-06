@@ -9,13 +9,15 @@ import { ProductEditComponent } from './product-edit/product-edit.component';
 import { FormsModule } from '@angular/forms';
 import{ ReactiveFormsModule} from '@angular/forms'
 import { HttpClientModule } from '@angular/common/http';
+import { CatAddComponent } from './cat-add/cat-add.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductAddComponent,
     ProductListComponent,
-    ProductEditComponent
+    ProductEditComponent,
+    CatAddComponent
   ],
   imports: [
     BrowserModule,

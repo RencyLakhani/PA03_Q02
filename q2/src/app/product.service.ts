@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Product } from './product';
+import { Category } from './category';
 @Injectable({
   providedIn: 'root'
 })
@@ -32,7 +33,8 @@ export class ProductService {
   public getallCategory()
   {
     return this.http.get(`${this.urlcat}`)
+  }  
+  public postCategory(Category:Category){
+    return this.http.post(`${this.url}/Add-Category/`,Category)
   }
-  
-
 }

@@ -4,6 +4,9 @@ const CategorySchema = mongoose.Schema({
    
     Cname:{
         type:String
+    },
+    image:{
+        type:String
     }
 })
 const Category = mongoose.model("Category",CategorySchema)
